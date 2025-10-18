@@ -17,8 +17,15 @@ This is a **Python-based Tic Tac Toe game** that allows a human player to compet
 
 ## How to Run
 
-1. Clone Repository
-2. cd TicTacToe-AI
-3. run "python TicTacToe.py"
+### 1️⃣ Clone this repository:
+```bash
+git clone https://github.com/ajawad06/TicTacToe-AI.git
+cd TicTacToe-AI
+```
+
+### 2️⃣ Run the Game:
+```bash
+python TicTacToe.py
+```
 
 
