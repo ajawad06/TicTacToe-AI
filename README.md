@@ -25,7 +25,7 @@ cd TicTacToe-AI
 
 ### 2️⃣ Run the Game:
 ```bash
-python TicTacToe.py
+python game.py
 ```
 
 
