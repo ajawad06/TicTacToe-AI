@@ -252,10 +252,27 @@ def main():
         if current_turn == user:
             # Human move
             print("\nYour turn:")
-            row = int(input("Row: "))
-            col = int(input("Col: "))
-            if board[row][col] == EMPTY:
-                board = result(board, (row, col))
+            while True:
+                try:
+                    row = int(input("Row (0-2): "))
+                    col = int(input("Col (0-2): "))
+                    # Check bounds
+                    if row not in [0, 1, 2] or col not in [0, 1, 2]:
+                    
+                        print("Invalid position! Choose values between 0 and 2.")
+                        continue
+                    # Check if empty
+                    if board[row][col] != EMPTY:
+                    
+                        print("That cell is already taken! Try again.")
+                        continue
+                    # If valid move
+                    board = result(board, (row, col))
+
+                    break
+                except ValueError:
+                    print("Invalid input! Please enter numeric values (0–2).")
+
               
         # 3. If AI turn, use a-b prune function
         else:
