@@ -271,7 +271,7 @@ def main():
 
                     break
                 except ValueError:
-                    print("Invalid input! Please enter numeric values (0–2).")
+                    print("Invalid input! Please enter numeric values (0-2).")
 
               
         # 3. If AI turn, use a-b prune function
